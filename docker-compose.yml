@@ -1,5 +1,5 @@
 volumes:
-  mongodb_data:
+  errbit_mongodb_data:
     external: true
 
 services:
@@ -8,4 +8,4 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - "mongodb_data:/data/db:rw"
+      - "errbit_mongodb_data:/data/db:rw"
